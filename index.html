@@ -1,0 +1,566 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Universal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+
+  <header class="w-full border-b border-gray-200 bg-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      
+      <div class="flex items-center space-x-4">
+        <button class="flex items-center space-x-1 text-gray-700 font-medium">
+          <span class="material-icons">menu</span>
+          <span>Sections</span>
+        </button>
+        <div class="hidden sm:block">
+          <input type="text" placeholder="Search" 
+                 class="border rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-gray-400">
+        </div>
+      </div>
+
+      <h1 class="text-4xl font-bold mt-6 text-gray-900">Universal</h1>
+
+      <div class="flex items-center space-x-4">
+        <div class="hidden sm:flex items-center space-x-2">
+          <img src="./assets/13c15020cb4d23b008b30e89346bbabff7bfecc8.png" alt="" class="w-12 h-8 object-cover rounded">
+          <div>
+            <p class="text-xs font-medium">Subscribe Now</p>
+            <p class="text-xs text-gray-500">3 month for $19</p>
+          </div>
+        </div>
+
+        <button class="flex items-center text-sm text-gray-700">
+          <span class="material-icons mr-1"><i class="fa-solid fa-user"></i></span>
+          Sign In
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 text-sm text-gray-600">
+      <span>Boston and New York Bear Brunt</span>
+      <div class="flex items-center space-x-4">
+        <span>Monday, January 1, 2018</span>
+        <span class="flex items-center space-x-1">
+          <span class="material-icons text-yellow-500"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></span>
+          <span>+ 23 °C</span>
+        </span>
+      </div>
+    </div>
+  </header>
+    <nav class="bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center h-16 items-center">
+      <div class="flex-shrink-0 text-white font-bold text-lg mr-10">
+        Universal
+      </div>
+
+      <div class="hidden md:flex space-x-6 text-sm font-semibold text-white">
+        <a href="#" class="hover:text-blue-400">NEWS</a>
+        <a href="#" class="hover:text-blue-400">OPINION</a>
+        <a href="#" class="hover:text-blue-400">SCIENCE</a>
+        <a href="#" class="hover:text-blue-400">LIFE</a>
+        <a href="#" class="hover:text-blue-400">TRAVEL</a>
+        <a href="#" class="hover:text-blue-400">MONEYS</a>
+        <a href="#" class="hover:text-blue-400">ART & DESIGN</a>
+        <a href="#" class="hover:text-blue-400">SPORTS</a>
+        <a href="#" class="hover:text-blue-400">PEOPLE</a>
+        <a href="#" class="hover:text-blue-400">HEALTH</a>
+        <a href="#" class="hover:text-blue-400">EDUCATION</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="menuBtn" class="text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden bg-gray-800">
+    <div class="px-4 py-3 space-y-2 text-white font-medium">
+      <a href="#" class="block hover:text-blue-400">NEWS</a>
+      <a href="#" class="block hover:text-blue-400">OPINION</a>
+      <a href="#" class="block hover:text-blue-400">SCIENCE</a>
+      <a href="#" class="block hover:text-blue-400">LIFE</a>
+      <a href="#" class="block hover:text-blue-400">TRAVEL</a>
+      <a href="#" class="block hover:text-blue-400">MONEYS</a>
+      <a href="#" class="block hover:text-blue-400">ART & DESIGN</a>
+      <a href="#" class="block hover:text-blue-400">SPORTS</a>
+      <a href="#" class="block hover:text-blue-400">PEOPLE</a>
+      <a href="#" class="block hover:text-blue-400">HEALTH</a>
+      <a href="#" class="block hover:text-blue-400">EDUCATION</a>
+    </div>
+  </div>
+</nav>
+
+  <section class="bg-gray-900">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-8">
+        <div class="md:col-span-2 relative rounded-lg overflow-hidden">
+      <img src="./assets/0058d57d903a2d47f3f39223dd356425663a28a5.png"
+           alt="Hero"
+           class="w-full h-[400px] md:h-[500px] object-cover">
+      
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex flex-col justify-end">
+        <div class="flex items-center gap-3 mb-10">
+          <img src="./assets/9e63193b9345a7ee4f6787bea99ae90898172725.png" alt="Author"
+               class="w-10 h-10 rounded-full border-2 border-white mb-50">
+          <div>
+            <p class="text-sm font-semibold">By Benjamin Turner</p>
+            <p class="text-xs text-gray-300">Traveler</p>
+          </div>
+        </div>
+        
+        <p class="text-blue-400 text-sm font-semibold uppercase tracking-wide">Destinations</p>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight mb-4 text-white">
+          In Southeast England, White Cliffs and Fish
+        </h1>
+        
+        <div class="flex items-center gap-4">
+          <a href="#"
+             class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium">
+            Read more →
+          </a>
+          <div class="flex items-center gap-2 text-sm text-gray-300">
+            <button class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-full"><i class="fa-solid fa-pause"></i></button>
+            <span>The chalk cliff of Beachy Head • 18:05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white text-gray-900 rounded-lg overflow-hidden">
+      <h2 class="px-4 py-3 font-bold border-b">RECOMMENDED FOR YOU</h2>
+      <ul class="divide-y text-sm">
+        <li class="p-4 hover:bg-gray-50 cursor-pointer">
+          <p class="text-teal-600 font-semibold">FOOD</p>
+          <p>For Chicken-Fried Steak, Too Much Is Just Enough →</p>
+        </li>
+        <li class="p-4 hover:bg-gray-50 cursor-pointer">
+          <p class="text-blue-600 font-semibold">CARS</p>
+          <p>Storm Has Car Dealers Doing Swift Business</p>
+        </li>
+        <li class="p-4 hover:bg-gray-50 cursor-pointer">
+          <p class="text-purple-600 font-semibold">MOVIES</p>
+          <p>War Is Hell? In New Military Dramas, It’s One-Dimensional</p>
+        </li>
+        <li class="p-4 hover:bg-gray-50 cursor-pointer">
+          <p class="text-red-600 font-semibold">NFL</p>
+          <p>11 surprising stat rankings for active NFL players →</p>
+        </li>
+        <li class="p-4 hover:bg-gray-50 cursor-pointer">
+          <p class="text-green-600 font-semibold">TECH REVIEWS</p>
+          <p>The bookcases you can buy online and assemble yourself</p>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+         <div class="bg-white rounded-lg shadow overflow-hidden flex flex-col md:col-span-2">
+           <div class="flex flex-col md:flex-row">
+             <div class="p-6 flex-1">
+               <p class="text-sm text-blue-600 font-semibold uppercase">Cars</p>
+               <h2 class="text-xl font-bold mb-2">The joy of replicas: A $5 million car for $50,000</h2>
+               <p class="text-gray-600 mb-4">
+                 The 31-year-old self-taught engineer and former amateur racer spends his days building artful recreations of one of the most iconic sports cars
+               </p>
+               <div class="flex items-center gap-3">
+                 <img src="./assets/7ea25de408ae9b683811ec01fe91e0d39413b834.png" class="w-8 h-8 rounded-full" alt="Author">
+                 <p class="text-sm text-gray-700">Jessica Miller: Even as the ride-hailing service’s future remem...</p>
+               </div>
+             </div>
+             <img src="./assets/13c15020cb4d23b008b30e89346bbabff7bfecc8.png" 
+                  alt="Car" class="w-full md:w-1/2 object-cover">
+           </div>
+           <div class="p-4 border-t flex items-center text-gray-500 text-sm">
+             <i class="fa-solid fa-comment"></i>342
+           </div>
+        </div>
+
+        <div class="bg-gray-800 text-white rounded-lg shadow overflow-hidden relative">
+          <img src="./assets/e491cb05be935bbee983c7b4d199a53dcdf2d444.png" 
+               alt="Tattoo" class="w-full h-full object-cover opacity-60">
+          <div class="absolute top-3 left-3 bg-green-500 text-xs px-2 py-1 rounded text-white font-bold">Popular</div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <p class="text-sm uppercase text-gray-200">Art & Design</p>
+            <h2 class="text-lg font-bold leading-snug">Invisible Ink: The Weird World of Tattoo Removal – In Pictures</h2>
+            <div class="flex items-center gap-3 mt-4 text-xs text-gray-300">
+              <img src="./assets/7ea25de408ae9b683811ec01fe91e0d39413b834.png" class="w-6 h-6 rounded-full" alt="Author">
+              <p>By Sarah Jenkins • Sept 26 • 16 <i class="fa-solid fa-comment"></i> • 832 <i class="fa-solid fa-heart"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 md:col-span-3 p-16 justify-center items-center">
+          
+            <div class="bg-white rounded-lg shadow mb-10 overflow-hidden w-full max-w-sm">
+             <img 
+               src="./assets/e826ca14dbdc137248074dfcec4bc785e088a5b1.png" 
+               alt="Cat" 
+               class="w-full h-48 sm:h-64 md:h-72 object-cover">
+             <div class="p-4">
+               <h3 class="font-bold">
+                 200+ Doomed Cats Saved From Euthanization
+               </h3>
+             </div>
+            </div>
+
+
+      
+          <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-3 gap-8 mb-10">
+            <div class="bg-white rounded-lg shadow p-8">
+                 <h3 class="font-bold">Is Coffee Bad for Bones?</h3>
+                 <p class="text-gray-600 text-sm mt-1">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken  bones</p>
+                 <p class="text-xs text-gray-400 mt-2">Oct 15</p>
+            </div>
+      
+          <div class="bg-white rounded-lg shadow p-8">
+            <h3 class="font-bold">What We Manufacture</h3>
+            <p class="text-gray-600 text-sm mt-1">A global history of the factory and the modern world that all should read</p>
+            <p class="text-xs text-gray-400 mt-2">Oct 14</p>
+          </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:col-span-3">
+         <div class="bg-white rounded-lg shadow p-8">
+            <h3 class="font-bold">It’s a Stressful World</h3>
+            <p class="text-gray-600 text-sm mt-1">Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</p>
+            <p class="text-xs text-gray-400 mt-2">Oct 14</p>
+          </div>
+      
+          <div class="bg-white rounded-lg shadow p-8">
+            <h3 class="font-bold">A Treat for Lemon Lovers</h3>
+            <p class="text-gray-600 text-sm mt-1">This tangerine, ginger and chocolate tart has verve, depth and a hint of spice</p>
+            <p class="text-xs text-gray-400 mt-2">Oct 13</p>
+          </div>
+            </div>
+      
+        </div>
+    </div>
+  </section>
+  <div class="max-w-7xl mx-auto py-10 px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <div class="lg:col-span-2 space-y-6">
+
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
+          <img src="./assets/4695986599358fc5e5361b2584728ebf220ac08c.png" alt="" class="w-full md:w-64 h-40 object-cover rounded-lg">
+          <div>
+            <p class="text-xs font-bold text-blue-600 uppercase">Flights</p>
+            <h2 class="text-xl font-semibold mt-1">Passengers Suffer as Crowded Field Puts Pressure on Europe’s Airlines</h2>
+            <p class="text-gray-600 mt-2 text-sm">Weaker carriers have fallen by the wayside amid fierce competition, while others have been hit by bad luck. The result: thousands of canceled flights.</p>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-3">
+              <span>Aug 6</span>
+              <span><i class="fa-solid fa-comment"></i> 342</span>
+              <span><i class="fa-solid fa-heart"></i> 830</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
+          <img src="./assets/da0d7ac28cfacd2e6d038d9144b0dc1e69b0a277.png" alt="" class="w-full md:w-64 h-40 object-cover rounded-lg">
+          <div>
+            <p class="text-xs font-bold text-green-600 uppercase">Food</p>
+            <h2 class="text-xl font-semibold mt-1">Three Courses, 20 Euros: The Affordable Dining Renaissance in Paris</h2>
+            <p class="text-gray-600 mt-2 text-sm">The Los Angeles area, for all of its culinary diversity, has not historically been thought of as a haven for bread lovers.</p>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-3">
+              <span>Oct 7</span>
+              <span><i class="fa-solid fa-comment"></i> 27</span>
+              <span><i class="fa-solid fa-heart"></i> 129</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
+          <img src="./assets/0777a6f0ff5669a509b17bea3714369489537604.png" alt="" class="w-full md:w-64 h-40 object-cover rounded-lg">
+          <div>
+            <p class="text-xs font-bold text-red-600 uppercase">Science</p>
+            <h2 class="text-xl font-semibold mt-1">Watch the High-Flying Physics of a Plant’s Exploding Fruits</h2>
+            <p class="text-gray-600 mt-2 text-sm">Three undergraduate physics majors and their professor worked out how the hairyflower wild petunia shoots tiny seeds.</p>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-3">
+              <span>Oct 11</span>
+              <span><i class="fa-solid fa-comment"></i> 30</span>
+              <span><i class="fa-solid fa-heart"></i> 284</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
+          <img src="./assets/8f7db41c6c5bd966b6cd76d78e47c46059d65980.png" alt="" class="w-full md:w-64 h-40 object-cover rounded-lg">
+          <div>
+            <p class="text-xs font-bold text-teal-600 uppercase">Health</p>
+            <h2 class="text-xl font-semibold mt-1">How the Shape of Your Ears Affects What You Hear</h2>
+            <p class="text-gray-600 mt-2 text-sm">We’re able to locate sound because our brains grasp the shape of our ears. When that shape changes, we need time and practice to adapt.</p>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-3">
+              <span>Oct 19</span>
+              <span><i class="fa-solid fa-comment"></i> 102</span>
+              <span><i class="fa-solid fa-heart"></i> 1,293</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
+          <img src="./assets/8f7db41c6c5bd966b6cd76d78e47c46059d65980.png" alt="" class="w-full md:w-64 h-40 object-cover rounded-lg">
+          <div>
+            <p class="text-xs font-bold text-teal-600 uppercase">Health</p>
+            <h2 class="text-xl font-semibold mt-1">How the Shape of Your Ears Affects What You Hear</h2>
+            <p class="text-gray-600 mt-2 text-sm">We’re able to locate sound because our brains grasp the shape of our ears. When that shape changes, we need time and practice to adapt.</p>
+            <div class="flex items-center gap-4 text-gray-400 text-xs mt-3">
+              <span>Oct 19</span>
+              <span><i class="fa-solid fa-comment"></i> 102</span>
+              <span><i class="fa-solid fa-heart"></i> 1,293</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4 space-y-4 max-h-4xl">
+        <h3 class="font-semibold text-gray-700 border-b pb-2">Recommended For You</h3>
+        
+        <div class="flex gap-3 items-center">
+          <img src="./assets/c20ba4bd3e9355bb1f038cf007e26732ce4e9a48.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Office Meetings Leave the Office</p>
+            <span class="text-xs text-gray-400">15 minutes ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/17eaf222072f8cb4676b2790050cebc71df3ccc8.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Experimental Vocal Music in Brooklyn</p>
+            <span class="text-xs text-gray-400">32 minutes ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/50aa05cca6c987eb8a81387669b81a9928f7bff0.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Google’s Influence Over Think Tanks</p>
+            <span class="text-xs text-gray-400">38 minutes ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/249c321a06a579c73fb8bde33666e988e90baa71.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Homes for Sale in NYC and Connecticut</p>
+            <span class="text-xs text-gray-400">53 minutes ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/e491cb05be935bbee983c7b4d199a53dcdf2d444.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Are You There, Dad? It’s Me, Alice</p>
+            <span class="text-xs text-gray-400">1 hour ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/e6faac456ec3592c2c565b9ca038a6ada1b87ae7.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">The New Punk Look: Lacy and Colorful</p>
+            <span class="text-xs text-gray-400">1 hour ago</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <img src="./assets/c6e4efb88a08e7f42ae640e064069a0be633d7ca.png" class="w-16 h-16 rounded object-cover">
+          <div>
+            <p class="text-sm font-medium">Sunday Best in Harlem and Brooklyn</p>
+            <span class="text-xs text-gray-400">2 hours ago</span>
+          </div>
+        </div>
+
+        <a href="#" class="block text-center text-blue-600 text-sm font-semibold mt-3">Read more</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <div class="relative rounded-xl overflow-hidden lg:col-span-2">
+        <img src="./assets/23ff376f03b8aac2187bc4c5e6ad2a8c2d771262.png" alt="" class="w-full h-[500px] object-cover">
+
+        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded">
+          Hot
+        </div>
+
+        <div class="absolute inset-0 flex flex-col justify-center mx-auto bg-gradient-to-t from-black/60 via-black/10 to-transparent p-6">
+          <div class="flex items-center mx-auto gap-3 mb-4 flex-col">
+            <img src="./assets/c8b299ef473c5a7bb3432de4be0e0da6f32cf723.png" alt="" class="w-10 h-10 rounded-full border-2 border-white">
+            <div class="mx-auto">
+              <p class="text-sm font-semibold text-white mx-auto">By Sarah Jenkins</p>
+              <p class="text-xs text-gray-200 mx-auto">Photographer</p>
+            </div>
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold text-white max-w-lg leading-snug mx-auto">
+            Readers' Choice winners: Your wine country favorites
+          </h2>
+
+          <button class="mx-auto mt-5 bg-blue-600 hover:bg-blue-700 text-white text-sm px-5 py-2 rounded-full flex items-center gap-2 w-max">
+            <span><i class="fa-solid fa-camera"></i></span> Watch photos 26
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-blue-100 rounded-xl p-6 flex flex-col justify-between relative overflow-hidden">
+        <p class="text-xs font-bold text-blue-600 uppercase">Careers</p>
+        <h3 class="text-xl font-semibold mt-2 text-gray-900">
+          Had a Job Interview but No Callback? Here’s What to Do
+        </h3>
+        <p class="text-gray-700 text-sm mt-3">
+          Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize.
+        </p>
+        <button class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-full text-sm w-max">
+          Read more
+        </button>
+        <img src="./assets/Image.png" alt="" class="absolute bottom-0 right-0 h-40 object-cover">
+      </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div class="bg-white rounded-xl p-6">
+        <h4 class="font-semibold text-lg text-gray-900">Is Coffee Bad for Bones?</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones
+        </p>
+        <span class="text-xs text-gray-400 block mt-3">Oct 15</span>
+      </div>
+      <div class="bg-white rounded-xl p-6">
+        <h4 class="font-semibold text-lg text-gray-900">What We Manufacture</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          A global history of the factory and the modern world that all should read
+        </p>
+        <span class="text-xs text-gray-400 block mt-3">Oct 14</span>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto px-4 py-10 text-center">
+    <h2 class="text-2xl font-bold">Subscribe now and get 20% off</h2>
+    <div class="mt-4 flex justify-center">
+      <input type="email" placeholder="Enter your email" 
+             class="w-64 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none">
+      <button class="bg-blue-600 text-white px-5 py-2 rounded-r-md hover:bg-blue-700">
+        Subscribe
+      </button>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-200">
+    <div class="flex mb-4">
+        <div class="w-48 bg-red-600 h-2"></div>
+        <div class="w-48 bg-blue-600 h-2"></div>
+        <div class="w-48 bg-yellow-600 h-2"></div>
+        <div class="w-48 bg-pink-600 h-2"></div>
+        <div class="w-48 bg-green-600 h-2"></div>
+        <div class="w-36 bg-orange-600 h-2"></div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-6 text-sm">
+      <div>
+        <h4 class="font-semibold mb-2">News</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Nation</li>
+          <li>World</li>
+          <li>Politics</li>
+          <li>Solar Eclipse</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Arts</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Art & Design</li>
+          <li>Movies</li>
+          <li>People</li>
+          <li>Video: Arts</li>
+          <li>Theater</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Travel</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Destinations</li>
+          <li>Flights</li>
+          <li>Business Travel</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Sports</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Olympics</li>
+          <li>Motor Sports</li>
+          <li>Volleyball</li>
+          <li>MMA</li>
+          <li>Cycling</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Tech</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Tech</li>
+          <li>Tech Columnists</li>
+          <li>Tech Reviews</li>
+          <li>Talking Tech</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Moneys</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Markets</li>
+          <li>Business</li>
+          <li>Personal Finance</li>
+          <li>Retirement</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full font-bold">JNV</div>
+      <nav class="flex gap-6 text-sm font-medium text-gray-700">
+        <a href="#">CONTACT US</a>
+        <a href="#">WORK WITH US</a>
+        <a href="#">ADVERTISE</a>
+        <a href="#">YOUR AD CHOISE</a>
+      </nav>
+    </div>
+
+    <div class="flex gap-4 mt-4 md:mt-0">
+      <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-gray-600 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-gray-600 hover:text-red-600"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="text-gray-600 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 text-center md:text-left text-xs text-gray-500">
+    <p>Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. 
+       Universal has since it was founded in 2015 grown into one of the world’s leading fashion companies.</p>
+    <p class="mt-2">© 2019 Universal UI Kit</p>
+  </div>
+
+
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
