@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+  <header class="w-full border-b border-gray-200 bg-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <div class="flex items-center space-x-4">
+        <button class="flex items-center space-x-1 text-gray-700 font-medium">
+          <i class="fa-solid fa-bars"></i>
+          <span>Sections</span>
+        </button>
+        <div class="hidden sm:block">
+          <input type="text" placeholder="Search" 
+                 class="border rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-gray-400">
+        </div>
+      </div>
+
+      <h1 class="text-4xl font-bold mt-6 text-gray-900">Universal</h1>
+
+      <div class="flex items-center space-x-4">
+        <div class="hidden sm:flex items-center space-x-2">
+          <img src="./assets/13c15020cb4d23b008b30e89346bbabff7bfecc8.png" alt="" class="w-12 h-8 object-cover rounded">
+          <div>
+            <p class="text-xs font-medium">Subscribe Now</p>
+            <p class="text-xs text-gray-500">3 month for $19</p>
+          </div>
+        </div>
+        <button class="flex items-center text-sm text-gray-700 md:hidden">
+          <i class="fa-solid fa-user mr-1"></i>
+          Sign In
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 text-sm text-gray-600">
+      <span>Boston and New York Bear Brunt</span>
+      <div class="flex items-center space-x-4">
+        <span>Monday, January 1, 2018</span>
+        <span class="flex items-center space-x-1">
+          <i class="fa-solid fa-sun text-yellow-500"></i>
+          <span>+ 23 °C</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center h-16 items-center">
+        <div class="flex-shrink-0 text-white font-bold text-lg mr-10">Universal</div>
+        <div class="hidden md:flex space-x-6 text-sm font-semibold text-white">
+          <a href="#" class="hover:text-blue-400">NEWS</a>
+          <a href="#" class="hover:text-blue-400">OPINION</a>
+          <a href="#" class="hover:text-blue-400">SCIENCE</a>
+          <a href="#" class="hover:text-blue-400">LIFE</a>
+          <a href="#" class="hover:text-blue-400">TRAVEL</a>
+          <a href="#" class="hover:text-blue-400">MONEYS</a>
+          <a href="#" class="hover:text-blue-400">ART & DESIGN</a>
+          <a href="#" class="hover:text-blue-400">SPORTS</a>
+          <a href="#" class="hover:text-blue-400">PEOPLE</a>
+          <a href="#" class="hover:text-blue-400">HEALTH</a>
+          <a href="#" class="hover:text-blue-400">EDUCATION</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menuBtn" class="text-white text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-gray-800">
+      <div class="px-4 py-3 space-y-2 text-white font-medium">
+        <a href="#" class="block hover:text-blue-400">NEWS</a>
+        <a href="#" class="block hover:text-blue-400">OPINION</a>
+        <a href="#" class="block hover:text-blue-400">SCIENCE</a>
+        <a href="#" class="block hover:text-blue-400">LIFE</a>
+        <a href="#" class="block hover:text-blue-400">TRAVEL</a>
+        <a href="#" class="block hover:text-blue-400">MONEYS</a>
+        <a href="#" class="block hover:text-blue-400">ART & DESIGN</a>
+        <a href="#" class="block hover:text-blue-400">SPORTS</a>
+        <a href="#" class="block hover:text-blue-400">PEOPLE</a>
+        <a href="#" class="block hover:text-blue-400">HEALTH</a>
+        <a href="#" class="block hover:text-blue-400">EDUCATION</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative h-[80vh] bg-cover bg-center flex items-center" style="background-image: url('./assets/83574c43fe59370a1e0f6da22ad530cc661bef67.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="absolute top-6 left-6 flex items-center gap-2 text-white text-sm cursor-pointer">
+      <span class="opacity-80 hover:opacity-100">← Back to main</span>
+    </div>
+    <div class="absolute top-6 right-6 flex items-center gap-6 text-white text-sm">
+      <span class="opacity-80 hover:opacity-100">← Prev</span>
+      <span class="opacity-80 hover:opacity-100">Next →</span>
+    </div>
+    <div class="relative max-w-3xl ml-20">
+      <p class="uppercase text-sm tracking-wider text-white/70">Destinations</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-white mt-3">
+        Five Travel Stories From 2017 to Help You Escape Into the World
+      </h1>
+      <p class="mt-4 text-white/90 max-w-2xl">
+        From Europe to remote Kodiak Island, Alaska, here are five stories to help you explore the world
+      </p>
+      <div class="flex items-center gap-6 mt-6 text-white/90 text-sm">
+        <span><i class="fa-solid fa-comment"></i> 19</span>
+        <span><i class="fa-solid fa-heart"></i> 142 shares</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-8 -mt-32 relative z-10">
+    <aside class="bg-[#6399ae] text-white p-6 rounded-lg flex flex-col gap-8 shadow-lg">
+      <h2 class="uppercase text-xs tracking-wide text-gray-200">Columns</h2>
+      <div class="border-b border-white/20 pb-5">
+        <p class="italic leading-snug">“Architecture is the thoughtful making of space”</p>
+        <div class="flex items-center mt-4 gap-3">
+          <img src="./assets/772c18f3b8a2d226a6e655ae826bd81d2d288a6b.png" class="w-10 h-10 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">David Williams</p>
+            <p class="text-sm text-gray-200">Architect</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-b border-white/20 pb-5">
+        <p class="italic leading-snug">“The details are not the details. They make the design.”</p>
+        <div class="flex items-center mt-4 gap-3">
+          <img src="./assets/2c38ca959b4c29ed8661940931e22653d3555342.png" class="w-10 h-10 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">Alexandra Green</p>
+            <p class="text-sm text-gray-200">Interior designer</p>
+          </div>
+        </div>
+      </div>
+      <div class="pb-5">
+        <p class="italic leading-snug">“Live life to the fullest, and focus on the positive”</p>
+        <div class="flex items-center mt-4 gap-3">
+          <img src="./assets/00b4d892bf65fb9ce47c74b2faab4c6f34c07fef.png" class="w-10 h-10 rounded-full" alt="">
+          <div>
+            <p class="font-semibold">Olivia Thompson</p>
+            <p class="text-sm text-gray-200">Coach</p>
+          </div>
+        </div>
+      </div>
+      <button class="mt-2 w-full bg-sky-600 py-2 rounded text-sm hover:bg-sky-500">Read more</button>
+    </aside>
+
+    <main class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg mt-36">
+      <h2 class="text-xl font-bold mb-4">Geography</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Geographers are trained in toponymy and cartology, this is their main preoccupation. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse harum tempora exercitationem amet doloribus corrupti recusandae, voluptas laborum nobis fugiat error nisi deserunt distinctio eligendi, laudantium animi eius quas sed inventore, natus eveniet ab placeat eaque perferendis. Animi odit eum quaerat, quibusdam, placeat unde ab architecto quia rerum saepe nam quisquam, delectus soluta tenetur maxime inventore nemo vitae amet. Nulla omnis corrupti quisquam est officiis dolores exercitationem eos quasi. Consequatur assumenda ducimus perspiciatis, rem delectus tempora maxime mollitia aspernatur expedita incidunt officiis. Quod ipsam adipisci reiciendis expedita quasi! Nostrum expedita recusandae soluta commodi harum temporibus nemo ducimus aliquam! Explicabo delectus tempore ducimus eligendi repudiandae repellat! Minus laudantium officiis rem. Placeat provident voluptate vel repellendus nostrum eos ab nam nobis, quod ex consectetur soluta corporis quisquam aliquid vero fugit. A autem harum repellendus veniam, eos mollitia? Eaque debitis aperiam officiis assumenda earum fugiat. Vitae similique pariatur iste fugit maxime voluptatem laudantium minima tenetur nesciunt possimus doloribus at, nemo aliquid quis distinctio!
+      </p>
+    </main>
+
+    <aside class="bg-white shadow rounded-lg p-6 text-center">
+      <img src="./assets/00b4d892bf65fb9ce47c74b2faab4c6f34c07fef.png" class="w-20 h-20 rounded-full mx-auto" alt="">
+      <h3 class="mt-4 font-bold text-lg">Mira Anderson</h3>
+      <p class="text-gray-500 text-sm">Traveler & Photographer</p>
+      <p class="mt-2 text-sm font-medium">82 articles</p>
+      <div class="flex justify-center gap-4 mt-4 text-gray-500">
+        <a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <button class="mt-6 w-full bg-gray-100 border rounded py-2 hover:bg-gray-200">
+        Follow on Universal
+      </button>
+    </aside>
+  </div>
+    <section class="max-w-7xl mx-auto px-4 mt-12">
+    <div class="h-[645px]">
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-xl shadow overflow-hidden border border-gray-200">
+          <div class="relative">
+            <img src="./assets/265e603ff70eb1d9ee96b07ae6f9789b5d59f543.png" class="w-full h-[420px] object-cover" alt="Mountains">
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow">‹</button>
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow">›</button>
+          </div>
+          <div class="flex">
+            <div class="px-5 py-3 border-t text-sm text-gray-600 flex-1">
+              Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+            </div>
+            <div class="flex items-center gap-3 px-5 py-4 border-t">
+              <img src="./assets/da6e1783a6a81b8d0865e531ff712599547e3448.png" alt="Author" class="w-10 h-10 rounded-full">
+              <div>
+                <p class="font-semibold text-gray-800">Andrew Washington</p>
+                <p class="text-sm text-gray-500">Photographer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="max-w-7xl mx-auto px-4 mt-12 flex md:flex flex-col">
+          <div class="mt-10 mr-48 space-y-5 text-gray-700 leading-relaxed text-[15px]">
+            <p>The oldest known world maps date back to ancient Babylon from the 9th century BC. The best known Babylonian world map, however, is the Imago Mundi of 600 BC. The map as reconstructed by Eckhard Unger shows Babylon on the Euphrates, surrounded by a circular landmass showing Assyria, Urartu and several cities, in turn surrounded by a "bitter river" (Oceanus), with seven islands arranged around it so as to form a seven-pointed star.</p>
+            <p>
+                The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
+            </p>
+            <p>
+                The ideas of Anaximander: considered by later Greek writers to be the true founder of geography, come to us through fragments quoted by his successors. Anaximander is credited with the invention of the gnomon, the simple, yet efficient Greek instrument that allowed the early measurement of latitude. Thales is also credited with the prediction of eclipses. The foundations of geography can be traced to the ancient cultures, such as the ancient, medieval, and early modern Chinese.
+            </p>
+            <p>
+                The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.
+            </p>
+      </div>
+      <div class="bg-white rounded-xl shadow border border-gray-200 overflow-hidden">
+        <img src="./assets/1f52670995b1ccfcec0dd473fc0d46e6947c32c0.png"
+             alt="Giraffe"
+             class="w-full h-52 object-cover">
+
+        <div class="p-4">
+          <h4 class="font-semibold text-[15px] leading-snug">
+            Application of Postcolonial Theory in the Middle East
+          </h4>
+          <p class="text-sm text-gray-500 mt-2">
+            In the essay “Overstating the Arab State”, by Nazih Ayubi, and “Is Jordan Palestine?”, 
+            by Raphael Israel, the authors deal with the psychologically fragmented postcolonial identity.
+          </p>
+
+          <div class="flex items-center gap-6 text-gray-500 text-sm mt-4">
+            <span class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364 4.318 12.682a4.5 4.5 0 010-6.364z"/>
+              </svg>
+              1,623
+            </span>
+            <span class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2h2m10-4h-4a2 2 0 00-2 2v0a2 2 0 01-2 2h4a2 2 0 002-2V6a2 2 0 00-2-2z"/>
+              </svg>
+              102
+            </span>
+          </div>
+     
+    </div>   </div>
+</div>
+<section class="max-w-6xl mx-auto p-6 space-y-8">
+  <div class="flex items-start gap-4 md:flex flex-col">
+    <div class="text-2xl font-bold text-gray-800">
+      <span class="text-blue-600">“</span>
+      Names of places... are not geography... know by heart a whole gazetteer full of them would not, in itself, constitute anyone a geographer. Geography has higher aims than this: it seeks to classify phenomena.
+    </div>
+   <div class="flex items-center gap-3 md:hidden">
+  <img src="./assets/00b4d892bf65fb9ce47c74b2faab4c6f34c07fef.png" alt="" class="w-12 h-12 rounded-full object-cover">
+  <div>
+    <h4 class="font-semibold text-gray-900 md:text-[8px]">William Peterson</h4>
+    <p class="text-sm text-gray-500">Travel Agent</p>
+  </div>
+</div>
+
+  </div>
+
+  <div class="text-gray-600 space-y-4">
+    <p>
+      The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.
+    </p>
+    <p>
+      The first rigorous system of latitude and longitude lines is credited to Hipparchus. He employed a sexagesimal system that was derived from Babylonian mathematics.
+    </p>
+  </div>
+
+  <div class="flex flex-wrap gap-2">
+    <span class="px-3 py-1 bg-gray-100 text-sm rounded">Travel</span>
+    <span class="px-3 py-1 bg-gray-100 text-sm rounded">Destinations</span>
+    <span class="px-3 py-1 bg-gray-100 text-sm rounded">Nature</span>
+    <span class="px-3 py-1 bg-gray-100 text-sm rounded">World</span>
+    <span class="px-3 py-1 bg-gray-100 text-sm rounded">Alaska</span>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3 class="font-semibold mb-4">Show Your Support</h3>
+    <div class="flex items-center gap-4 md:flex flex-col">
+      <button class="flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-full">
+        <i class="fa-solid fa-heart"></i> Like 42
+      </button>
+      <button class="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full">
+        <i class="fa-brands fa-facebook-f"></i> Share 80
+      </button>
+      <button class="flex items-center gap-2 px-4 py-2 bg-sky-500 text-white rounded-full">
+        <i class="fab fa-twitter"></i> Tweet 33
+      </button>
+      <button class="px-4 py-2 bg-gray-100 rounded-full">...</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+      <img src="./assets/68d7911a5b2f535ea3f9fe81aa87f6c168b18c0c.png" alt="" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h4 class="font-semibold">An Evangelist of Singaporean Food Has a New Pulpit</h4>
+        <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+          <span>1,904 <i class="fa-solid fa-eye"></i></span>
+          <span>82 <i class="fa-solid fa-comment"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+      <img src="./assets/8dc96ea5f0cd45bff16fb84588db5efe5394ee46.png" alt="" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h4 class="font-semibold">At the Mouth of the Mississippi, a Weird and Fragile Beauty</h4>
+        <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+          <span>2,873 <i class="fa-solid fa-eye"></i></span>
+          <span>982 <i class="fa-solid fa-comment"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+      <img src="./assets/a62a7682f0c014b30276653e20039a3aeb33835f.png" alt="" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h4 class="font-semibold">Chattanooga Is Changing. But Its Charms Remain.</h4>
+        <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+          <span>821 <i class="fa-solid fa-eye"></i></span>
+          <span>30 <i class="fa-solid fa-comment"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+      <img src="./assets/aa0f5bae4bf71a7a860d0349fc14ce02de47fddb.png" alt="" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h4 class="font-semibold">How to Get by in a Country if You Don’t Know the Language</h4>
+        <div class="flex items-center text-gray-500 text-sm mt-2 gap-4">
+          <span>5,030 <i class="fa-solid fa-eye"></i></span>
+          <span>495 <i class="fa-solid fa-comment"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="max-w-3xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-6">Comments <span class="text-gray-500 font-normal">19</span></h2>
+    <div class="flex justify-end mb-6">
+      <button class="flex items-center gap-2 px-4 py-2 border rounded-full text-gray-700 hover:bg-gray-100 transition">✏️ Add comment</button>
+    </div>
+    <div class="space-y-8">
+      <div>
+        <div class="flex items-start gap-4">
+          <img src="./assets/da6e1783a6a81b8d0865e531ff712599547e3448.png" alt="" class="w-10 h-10 rounded-full">
+          <div class="flex-1">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <span class="font-semibold text-gray-900">Ryan Hall</span>
+              <span>July 17, 6:38 pm</span>
+            </div>
+            <p class="mt-2 text-gray-800">In the event, “in places like Iraq and Jordan...”</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+              <button><i class="fa-solid fa-comment"></i> Reply</button>
+              <button><i class="fa-solid fa-thumbs-up"></i> +10</button>
+              <button><i class="fa-solid fa-thumbs-down"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="ml-14 mt-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/2c38ca959b4c29ed8661940931e22653d3555342.png" alt="" class="w-10 h-10 rounded-full">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 text-sm text-gray-500">
+                <span class="font-semibold text-gray-900">Lora Morrow</span>
+                <span>July 17, 6:41 pm</span>
+              </div>
+              <p class="mt-2 text-gray-800">Likewise, most states in the Persian Gulf...</p>
+              <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                <button><i class="fa-solid fa-comment"></i> Reply</button>
+                <button><i class="fa-solid fa-thumbs-up"></i> 0</button>
+                <button><i class="fa-solid fa-thumbs-down"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t pt-6">
+        <div class="flex items-start gap-4">
+          <img src="./assets/1f50b9c5ac8cb49dfe476e246d03811653249564.png" alt="" class="w-10 h-10 rounded-full">
+          <div class="flex-1">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <span class="font-semibold text-gray-900">Tara Stark</span>
+              <span>July 17, 6:53 pm</span>
+            </div>
+            <p class="mt-2 text-gray-800">French Indochina was divided into five subdivisions...</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+              <button><i class="fa-solid fa-comment"></i> Reply</button>
+              <button><i class="fa-solid fa-thumbs-up"></i></button>
+              <button class="text-red-500"><i class="fa-solid fa-thumbs-down"></i> -3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t pt-6">
+        <div class="flex items-start gap-4">
+          <img src="./assets/772c18f3b8a2d226a6e655ae826bd81d2d288a6b.png" alt="" class="w-10 h-10 rounded-full">
+          <div class="flex-1">
+            <div class="flex items-center gap-2 text-sm text-gray-500">
+              <span class="font-semibold text-gray-900">Kris Robertson</span>
+              <span>July 17, 7:12 pm</span>
+            </div>
+            <p class="mt-2 text-gray-800">Indian Marxist scholar Vivek Chibber...</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-gray-500">
+              <button><i class="fa-solid fa-comment"></i> Reply</button>
+              <button><i class="fa-solid fa-thumbs-up"></i> 0</button>
+              <button><i class="fa-solid fa-thumbs-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-8">
+      <button class="px-6 py-2 border rounded-full text-gray-700 hover:bg-gray-100 transition">⟳ Load more</button>
+    </div>
+  </section>
+
+  <div class="max-w-5xl mx-auto px-4 py-10 text-center">
+    <h2 class="text-2xl font-bold">Subscribe now and get 20% off</h2>
+    <div class="mt-4 flex justify-center">
+      <input type="email" placeholder="Enter your email" 
+             class="w-64 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none">
+      <button class="bg-blue-600 text-white px-5 py-2 rounded-r-md hover:bg-blue-700">
+        Subscribe
+      </button>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-8 border-t border-gray-200">
+    <div class="flex mb-4">
+        <div class="w-48 bg-red-600 h-2"></div>
+        <div class="w-48 bg-blue-600 h-2"></div>
+        <div class="w-48 bg-yellow-600 h-2"></div>
+        <div class="w-48 bg-pink-600 h-2"></div>
+        <div class="w-48 bg-green-600 h-2"></div>
+        <div class="w-36 bg-orange-600 h-2"></div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-6 text-sm">
+      <div>
+        <h4 class="font-semibold mb-2">News</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Nation</li>
+          <li>World</li>
+          <li>Politics</li>
+          <li>Solar Eclipse</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Arts</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Art & Design</li>
+          <li>Movies</li>
+          <li>People</li>
+          <li>Video: Arts</li>
+          <li>Theater</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Travel</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Destinations</li>
+          <li>Flights</li>
+          <li>Business Travel</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Sports</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Olympics</li>
+          <li>Motor Sports</li>
+          <li>Volleyball</li>
+          <li>MMA</li>
+          <li>Cycling</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Tech</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Tech</li>
+          <li>Tech Columnists</li>
+          <li>Tech Reviews</li>
+          <li>Talking Tech</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Moneys</h4>
+        <ul class="space-y-1 text-gray-600">
+          <li>Markets</li>
+          <li>Business</li>
+          <li>Personal Finance</li>
+          <li>Retirement</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between">
+    <div class="flex items-center gap-2 md:flex flex-col">
+      <div class="w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full font-bold">JNV</div>
+      <nav class="flex gap-6 text-sm font-medium text-gray-700 md:flex flex-col">
+        <a href="#">CONTACT US</a>
+        <a href="#">WORK WITH US</a>
+        <a href="#">ADVERTISE</a>
+        <a href="#">YOUR AD CHOISE</a>
+      </nav>
+    </div>
+
+    <div class="flex gap-4 mt-4 md:mt-0">
+      <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-gray-600 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-gray-600 hover:text-red-600"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="text-gray-600 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 text-center md:text-left text-xs text-gray-500">
+    <p>Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. 
+       Universal has since it was founded in 2015 grown into one of the world’s leading fashion companies.</p>
+    <p class="mt-2">© 2019 Universal UI Kit</p>
+  </div>
+  
+<script src="./app.js"></script>
+</body>
+</html>
